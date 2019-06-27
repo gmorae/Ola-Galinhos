@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>OláGalinhos!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- w3school-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--favicon-->
+<link rel="shortcut icon" href="imagens/favicon.jpg" />
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/mdb.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+
+<style>
+
+  body,h1 {font-family: "Montserrat", sans-serif}
+
+  img {margin-bottom: -7px}
+
+  .w3-row-padding img {margin-bottom: 12px}
+
+  zoom {
+    transform: scale(1.5)}
+
+
+  </style>
+<body>
+
+<!-- menu -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="index.html#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Voltar a Página inicial</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- começo -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Galeria</b></h1>
+  <p><b>Algumas fotos de Galinhos</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Alinhar as fotos</button></p>
+</header>
+</div>
+
+<!-- Imagens -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third zoom">
+
+      
+    <img src="imagens/00.jpg" style="width:100%">
+    <img src="imagens/08.jpg" style="width:100%">
+    <img src="imagens/03.jpg" style="width:100%">
+    <img src="imagens/09.jpg" style="width:100%">
+    <img src="imagens/07.jpg" style="width:100%">
+    <img src="imagens/24.jpg" style="width:100%">
+    <img src="imagens/26.jpg" style="width:100%">
+
+  </div>
+
+  <div class="w3-third">
+    <img src="imagens/02.jpg" style="width:100%">
+    <img src="imagens/09.jpg" style="width:100%">
+    <img src="imagens/11.jpg" style="width:100%">
+    <img src="imagens/04.jpg" style="width:100%">
+    <img src="imagens/14.jpg" style="width:100%">
+    <img src="imagens/15.jpg" style="width:100%">
+    <img src="imagens/22.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="imagens/16.jpg" style="width:100%">
+    <img src="imagens/17.jpg" style="width:100%">
+    <img src="imagens/18.jpg" style="width:100%">
+    <img src="imagens/19.jpg" style="width:100%">
+    <img src="imagens/20.jpg" style="width:100%">
+    <img src="imagens/21.jpg" style="width:100%">
+    <img src="imagens/23.jpg" style="width:100%">
+    <img src="imagens/27.jpg" style="width:100%">
+  </div>
+</div>
+
+
+<!-- Rodape -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <a href= "https://instagram.com/olagalinhos?utm_source=ig_profile_share&igshid=1g8mxya2w4ftw" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></a></i>
+  <a href="https://www.facebook.com/Ol%C3%A1-Galinhos-2222246818060843/" target="_blank"><i class="fa fa-facebook w3-hover-opacity"></i></a>
+  <p class="w3-medium">Desenvolvido por Gabriel Moraes</p>
+</footer>
+ 
+
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
